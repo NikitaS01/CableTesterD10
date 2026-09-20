@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIY Кабельный тестер NKS — Официальный сайт</title>
+  <!-- Подключение шрифтов и иконок FontAwesome -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Внешний файл стилей CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Мобильная кнопка вызова гамбургер-меню -->
+  <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Открыть меню">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <!-- ==================== HEADER ==================== -->
+  <header>
+    <a href="#" class="logo">
+      <i class="fa-solid fa-microchip text-nvidia"></i> DIY CABLE TESTER
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-item">Главная</a></li>
+        <li><a href="#gallery" class="nav-item">Внешний вид</a></li>
+        <li><a href="#simulator" class="nav-item">Симулятор</a></li>
+        <li><a href="#features" class="nav-item">Возможности</a></li>
+        <li><a href="#comparison" class="nav-item">Сравнение</a></li>
+        <li><a href="#specs" class="nav-item">Характеристики</a></li>
+      </ul>
+    </nav>
+    <!-- Кнопка перехода на Авито в шапке сайта -->
+    <a href="https://www.avito.ru/tutaev/remont_i_stroitelstvo/tester_dlya_prozvonki_mnogozhilnyh_kabeley_8276379716" target="_blank" class="btn-buy-link">
+      <button class="btn-buy"><i class="fa-solid fa-cart-shopping"></i> Заказать</button>
+    </a>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge-top">
+          <i class="fa-solid fa-bolt"></i> ARDUINO PLATFORM 
+        </div>
+        <h1 class="hero-title">
+          DIY Кабельный <br><span class="text-nvidia nvidia-glow">Тестер</span>
+        </h1>
+        <p class="hero-description">
+          Автоматическая проверка до 9+(GND) жил одновременно. 
+          
+          Двухсторонняя проверка (Master-Slave), мгновенное обнаружение КЗ, пересортицы и обрывов.
+        </p>
+
+        <div class="hero-buttons">
+          <!-- Кнопка перехода на Авито в главном баннере -->
+          <a href="https://www.avito.ru" target="_blank" class="btn-buy-link">
+            <button class="btn-buy hero-btn-main">
+              <i class="fa-solid fa-bag-shopping"></i> Заказать
+            </button>
+          </a>
+          <a href="#simulator" class="btn-sim-link">
+            <i class="fa-solid fa-play"></i> Запустить симулятор
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-badges">
+        <div class="card">
+          <div class="card-title"><i class="fa-solid fa-bolt text-nvidia"></i> Высокая скорость</div>
+          <p class="card-text">Проверка 10-жильного кабеля менее чем за 1 секунду вместо 5 минут вручную.</p>
+        </div>
+        <div class="card">
+          <div class="card-title"><i class="fa-solid fa-battery-full text-nvidia"></i> До 90 часов непрерывной работы</div>
+          <p class="card-text">Встроенный акумулятор формата 18650 емкостью 3000 мАч с зарядкой Type-C и автоотключением экрана через 3 мин.</p>
+        </div>
+        <div class="card">
+          <div class="card-title"><i class="fa-solid fa-magnet text-nvidia"></i> Магнитное крепление</div>
+          <p class="card-text">5 неодимовых магнитов на корпусе для удобной фиксации на металлоконструкциях.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY SECTION ==================== -->
+  <section id="gallery">
+    <div class="section-subtitle">ВНЕШНИЙ ВИД И КОНСТРУКЦИЯ</div>
+    <div class="section-title"><i class="fa-solid fa-camera text-nvidia"></i> Фотографии готового прибора</div>
+
+    <div class="grid-2 gallery-grid">
+      <div class="photo-card">
+        <div class="photo-img-wrapper">
+          <img src="Media/F1.jpg" alt="NKS Tester Front View">
+        </div>
+        <div class="card-title"><i class="fa-solid fa-camera text-nvidia"></i> Внешний вид</div>
+        <p class="card-text">
+          Прочный защитный корпус с неодимовыми магнитами и удобным доступом к дисплею и органам управления.
+        </p>
+      </div>
+      
+      <div class="photo-card">
+        <div class="photo-img-wrapper">
+          <img src="Media/F2.png" alt="NKS Tester Connection View">
+        </div>
+        <div class="card-title"><i class="fa-solid fa-cube text-nvidia"></i> Эргономичный 3D-корпус</div>
+        <p class="card-text">
+          Высокачественный прочный защитный корпус разработанный и напечатанный на 3D-принтере.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid-2 gallery-grid">
+      <div class="photo-card">
+        <div class="photo-img-wrapper">
+          <img src="Media/F3.jpg" alt="NKS Tester Front View">
+        </div>
+        <div class="card-title"><i class="fa-solid fa-toggle-on text-nvidia"></i> Управление</div>
+        <p class="card-text">
+             Быстроразжимные клеммники WAGO для моментального подключения жил кабелей без паяльников и винтов.
+              <br><br>
+             Кнопка включения, кнопка поворота экрана, индикатор зарядки
+        </p>
+      </div>
+
+      <div class="photo-card">
+        <div class="photo-img-wrapper">
+          <img src="Media/F4.jpg" alt="NKS Tester Connection View">
+        </div>
+        <div class="card-title"><i class="fa-solid fa-plug text-nvidia"></i> Автономная работа</div>
+        <p class="card-text">
+          Акумулятор емкостью 3000 мАч обеспечивает до 90 часов непрерывной работы устройства. 
+           <br><br>
+          Зарядка осуществляется через порт Type-C.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ==================== SIMULATOR SECTION ==================== -->
+  <section id="simulator" class="simulator-section">
+    <div class="section-subtitle">ИНТЕРАКТИВНЫЙ СИМУЛЯТОР ДИСПЛЕЯ</div>
+    <div class="section-title"><i class="fa-solid fa-desktop text-nvidia"></i> Диагностика ошибок в реальном времени</div>
+    <p class="simulator-desc">Нажимайте на кнопки справа, чтобы протестировать реакцию дисплея на различные варианты неисправности кабеля:</p>
+
+    <div class="simulator-wrapper">
+      
+      <!-- Interactive OLED Display Screen -->
+      <div class="oled-wrapper">
+        <div id="oledScreen" class="oled-container">
+          <div class="oled-header">
+            <span id="oledRole">MASTER</span>
+            <span id="oledBat">98% 4.1V</span>
+            <span id="oledBatIcon">[====|]</span>
+          </div>
+
+          <div id="oledAlert" class="oled-alert">
+            ERROR: SHORT CIRCUIT
+          </div>
+
+          <div id="oledGrid" class="oled-grid">
+            <!-- Dynamic JS injection -->
+          </div>
+        </div>
+
+        <div class="oled-caption">
+          <i class="fa-solid fa-circle-dot"></i> Эмуляция экрана OLED 0.96" (128x64px)
+        </div>
+      </div>
+
+      <!-- Control Buttons -->
+      <div class="sim-controls">
+        <p class="sim-controls-title">Выберите режим проверки:</p>
+
+        <button id="btnOk" class="sim-btn" onclick="setSimMode('ok')">
+          <i class="fa-solid fa-circle-check" style="color: #00e676;"></i> Все 10 жил исправны и соединены верно
+        </button>
+
+        <button id="btnSwap" class="sim-btn" onclick="setSimMode('swap')">
+          <i class="fa-solid fa-right-left-long" style="color: #ffb70d;"></i> Пересортица (4>7)
+        </button>
+
+        <button id="btnShort" class="sim-btn active" onclick="setSimMode('short')">
+          <i class="fa-solid fa-bolt" style="color: #ff3333;"></i> Короткое замыкание (5-6)
+        </button>
+
+        <button id="btnOpen" class="sim-btn" onclick="setSimMode('open')">
+          <i class="fa-solid fa-scissors" style="color: #ff5252;"></i> Обрыв жилы #3
+        </button>
+
+        <button id="btnSlave" class="sim-btn" onclick="setSimMode('slave_off')">
+          <i class="fa-solid fa-power-off" style="color: #888;"></i> Второе устройство (Slave) отключено
+        </button>
+
+        <button class="sim-btn rotate-btn" onclick="toggleRotateScreen()">
+          <i class="fa-solid fa-rotate"></i> Повернуть экран (180°)
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FEATURES SECTION ==================== -->
+  <section id="features">
+    <div class="section-subtitle">КЛЮЧЕВЫЕ ВОЗМОЖНОСТИ</div>
+    <div class="section-title"><i class="fa-solid fa-microchip text-nvidia"></i> Функции устройства</div>
+
+    <div class="grid-2 features-grid">
+      <div class="card">
+        <div class="card-title"><i class="fa-solid fa-diagram-project"></i> Двухсторонняя проверка</div>
+        <p class="card-desc">
+          Оба модуля (Master и Slave) циклически отправляют и принимают тестовые импульсы. Результат раскладки жил виден одновременно на обоих концах кабельной трассы.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><i class="fa-solid fa-magnifying-glass-chart"></i> Локальная диагностика КЗ</div>
+        <p class="card-desc">
+          Способность находить короткое замыкание на своей стороне даже при отключенном или неподключенном парном модуле Slave (автономный опрос линий).
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><i class="fa-solid fa-rotate"></i> Поворот экрана на 180°</div>
+        <p class="card-desc">
+          Отдельная физическая кнопка на корпусе мгновенно переворачивает изображение на дисплее для удобного чтения под любым углом внутри электрощита.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><i class="fa-solid fa-leaf"></i> Умное энергосбережение</div>
+        <p class="card-desc">
+          При отсутствии действий в течение 3 минут устройство автоматически отключает экран, экономя заряд аккумулятора.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COMPARISON SECTION ==================== -->
+  <section id="comparison">
+    <div class="section-subtitle">ЭФФЕКТИВНОСТЬ В СРАВНЕНИИ</div>
+    <div class="section-title"><i class="fa-solid fa-code-compare text-nvidia"></i> DIY Кабельный тестер vs Мультиметр</div>
+
+    <div class="table-container">
+      <table class="nvidia-table">
+        <thead>
+          <tr>
+            <th>Критерий / Параметр</th>
+            <th>Классический Мультиметр</th>
+            <th class="accent-col"><i class="fa-solid fa-check"></i> DIY Тестер </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Необходимый персонал</b></td>
+            <td>2 человека (или 1 с перебежками)</td>
+            <td><b class="accent-text">1 человек</b></td>
+          </tr>
+          <tr>
+            <td><b>Время проверки 10 жил</b></td>
+            <td>3–5 минут</td>
+            <td><b class="accent-text">Меньше 1 секунды</b> (~0.5с цикл)</td>
+          </tr>
+          <tr>
+            <td><b>Поиск пересортицы жил</b></td>
+            <td>Ручная маркировка каждой жилы</td>
+            <td><b class="accent-text">Автоматическая карта</b> (напр. 2>3 !)</td>
+          </tr>
+          <tr>
+            <td><b>Двухсторонняя индикация</b></td>
+            <td>Результат только у одного оператора</td>
+            <td><b class="accent-text">Отображается на обоих OLED</b></td>
+          </tr>
+          <tr>
+            <td><b>Проверка на КЗ</b></td>
+            <td>Поочередная прозвонка пар</td>
+            <td><b class="accent-text">Мгновенный опрос всех  жил</b></td>
+          </tr>
+          <tr>
+            <td><b>Эргономика в щите</b></td>
+            <td>Нужно держать 2 щупа</td>
+            <td><b class="accent-text">Зажимы WAGO + Магниты на задней стороне корпуса</b></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ==================== SPECS SECTION ==================== -->
+  <section id="specs">
+    <div class="section-subtitle">СПЕЦИФИКАЦИЯ И КОНСТРУКТИВ</div>
+    <div class="section-title"><i class="fa-solid fa-sliders text-nvidia"></i> Технические характеристики</div>
+
+    <div class="grid-3 specs-grid">
+      <div class="card spec-card">
+        <i class="fa-solid fa-ethernet text-nvidia spec-icon"></i>
+        <div class="spec-value">10 Каналов</div>
+        <div class="spec-desc">9 независимых цифровых линий + общий GND. Ток КЗ до 30 мА.</div>
+      </div>
+
+      <div class="card spec-card">
+        <i class="fa-solid fa-battery-three-quarters text-nvidia spec-icon"></i>
+        <div class="spec-value">3000 мАч</div>
+        <div class="spec-desc">Сменный АКБ 18650, порт Type-C (зарядка 3-4ч), мониторинг 3.3В...4.2В.</div>
+      </div>
+
+      <div class="card spec-card">
+        <i class="fa-solid fa-ruler-combined text-nvidia spec-icon"></i>
+        <div class="spec-value">100×66×33 мм</div>
+        <div class="spec-desc">Компактный 3D-печатный корпус. Вес всего 150 грамм.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+  <div class="footer-info">
+    Разработчик: <b>NKS Lab</b>
+    <span class="footer-separator">|</span>
+    Версия прошивки: <b class="text-nvidia">v1.0</b>
+  </div>
+
+  <div class="footer-links">
+    <a href="https://t.me/CableTestD10"
+       target="_blank"
+       rel="noopener noreferrer">
+      <i class="fa-brands fa-telegram"></i>
+      Telegram
+    </a>
+  </div>
+
+  <div class="footer-copy">
+    © 2026  Все права защищены.
+  </div>
+</footer>
+
+  <!-- Модальное окно оформления заказа удалено. Переход осуществляется напрямую на Авито. -->
+
+  <!-- Внешний файл скриптов JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
