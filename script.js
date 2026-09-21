@@ -48,9 +48,9 @@ const simStates = {
     alert: "",
     items: [
       { label: "1>1 OK", err: false },  { label: "6>6 OK", err: false },
-      { label: "2>2 OK", err: false },  { label: "7>7 ! ", err: true },
+      { label: "2>2 OK", err: false },  { label: "7>4 ! ", err: true },
       { label: "3>3 OK", err: false }, { label: "8>8 OK", err: false },
-      { label: "4>4 ! ", err: true }, { label: "9>9 OK", err: false },
+      { label: "4>7 ! ", err: true }, { label: "9>9 OK", err: false },
       { label: "5>5 OK", err: false }, { label: "10>10 OK", err: false }
     ]
   },
